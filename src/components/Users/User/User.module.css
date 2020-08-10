@@ -1,0 +1,162 @@
+.User {
+  display: flex;
+  flex-direction: column;
+  height: 200px;
+  position: relative;
+  background-size: cover;
+  border-radius: 7px;
+  overflow: hidden;
+  padding: 20px;
+  padding-bottom: 0;
+  cursor: pointer;
+  transform: rotateX(0deg) rotateY(0deg);
+  transition: all 0.2s linear;
+  will-change: transform;
+  background: linear-gradient(45deg, #52b6ff, #5445f7);
+  text-align: center;
+}
+.infoContainer {
+  display: table;
+  width: 100%;
+  z-index: 5;
+  height: 100%;
+}
+.Container {
+  z-index: 5;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+.userName {
+  display: table-row-group;
+  z-index: 5;
+  padding-bottom: 20px;
+  text-align: start;
+}
+.graphContainer {
+  display: block;
+  position: fixed;
+  height: calc(100% - 20px);
+  width: calc(100% - 40px);
+  z-index: 4;
+}
+.backgroundShape {
+  position: relative;
+  text-align: center;
+  overflow: hidden;
+  z-index: 2;
+  margin: -20px;
+  margin-bottom: -90px;
+  height: calc(100% + 30px);
+}
+.backgroundShape path {
+  fill: #52b6ff;
+  opacity: 0.5;
+}
+.graph {
+  z-index: 2;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+
+.User h1 {
+  font-size: 1.5em;
+  transition: all 0.3s;
+  text-shadow: 1px 1px 2px #000;
+}
+
+.User h1 {
+  transform: translateY(-20px);
+}
+.User h1 span {
+  color: #fff;
+}
+
+.User span.cat {
+  letter-spacing: 2px;
+  font-weight: bold;
+  font-family: 'Lato', sans-serif;
+  position: relative;
+  z-index: 5;
+  pointer-events: none;
+  overflow: hidden;
+  color: #fff;
+  display: table-cell;
+  text-align: left;
+}
+.catContainer {
+  display: table-row;
+}
+.Country {
+  display: table-cell;
+  font-size: 1.7rem;
+}
+.activityTime {
+  display: inline-flex;
+  width: 100%;
+  justify-content: center;
+  margin: 5px;
+}
+.startTime {
+  padding: 2%;
+  background: lightgreen;
+  outline: auto;
+  width: 30%;
+  margin: 5px;
+}
+.endTime {
+  padding: 2%;
+  background: lightcoral;
+  outline: auto;
+  width: 30%;
+  margin: 5px;
+}
+
+@media screen and (min-width: 1000px) {
+  .graphContainer {
+    transition: all 0.5s;
+    transform: translateY(200px);
+  }
+
+  .User:hover .graphContainer {
+    transform: translateY(0px);
+  }
+  .User h1 {
+    transform: translateY(-20px);
+  }
+  .User:hover h1 {
+    transform: translateY(-100px);
+  }
+  .User span.cat {
+    color: transparent;
+  }
+  .User span.cat::before,
+  .User span.cat::after {
+    content: attr(data-hover);
+    position: absolute;
+    display: inline-block;
+    left: 0;
+    top: 0;
+    white-space: nowrap;
+    overflow: hidden;
+    max-width: 0%;
+    transition: max-width 300ms ease-out;
+  }
+  .User span.cat::before {
+    color: #5445f7;
+    transition-delay: 100ms;
+  }
+  .User span.cat::after {
+    color: white;
+  }
+
+  .User:hover span.cat:after,
+  .User:hover span.cat:before {
+    max-width: 100%;
+  }
+
+  .User:hover span.cat:after {
+    transition-delay: 300ms;
+  }
+}

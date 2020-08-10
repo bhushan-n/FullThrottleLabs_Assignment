@@ -1,0 +1,26 @@
+.graph {
+  margin: auto;
+  height: 100%;
+  min-width: 315px;
+  max-width: 315px;
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-end;
+}
+/*general bar style*/
+.bar {
+  background: linear-gradient(-180deg, #66f1c3, #52b6ff);
+  color: #3526d3;
+  filter: blur(0.3px);
+  transition: color 0.3s ease-out;
+  width: 40px;
+  height: 0px;
+  opacity: 0.75;
+  font-size: 0.7em;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+.bar:hover {
+  transition: height 0.3s ease-out;
+}

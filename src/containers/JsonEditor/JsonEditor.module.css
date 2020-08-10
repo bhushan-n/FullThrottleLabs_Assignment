@@ -1,0 +1,18 @@
+.JsonEditor {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.UpdateButton {
+  width: 100%;
+  padding-top: 5%;
+  display: flex;
+  justify-content: center;
+}
+.addJsonButton {
+  right: 10px;
+  bottom: 10px;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+}
