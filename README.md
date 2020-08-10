@@ -7,7 +7,7 @@
 <br />
 <p align="center">
   <a href="https://github.com/github_username/repo">
-    <img src="assets/images/logo.svg" alt="Logo" width="80" height="80">
+    <img src="/images/logo.svg" alt="Logo" width="80" height="80">
   </a>
 
   <h3 align="center">FullThrottleLabs_Assignment</h3>
@@ -83,7 +83,7 @@ npm start
 <!-- USAGE  -->
 ## Usage
 
-<h4>Live Example (Production Build): [here](http://app.cloudsi.de.s3-website.ap-south-1.amazonaws.com/)</h4>
+<h4>Live Example (Production Build):</h4> [here](http://app.cloudsi.de.s3-website.ap-south-1.amazonaws.com/)
 
 
 <!-- TODO -->
