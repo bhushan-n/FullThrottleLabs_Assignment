@@ -7,10 +7,10 @@
 <br />
 <p align="center">
   <a href="https://github.com/github_username/repo">
-    <img src="/images/logo.svg" alt="Logo" width="80" height="80">
+    <img src="/images/logo.png" alt="Logo" width="80" height="80">
   </a>
 
-  <h3 align="center">FullThrottleLabs_Assignment</h3>
+  <h3 align="center">✨FullThrottleLabs_Assignment✨</h3>
 
   <p align="center">
     A Mobile-First user interface built on React that allows a user to view a list of users from a mock JSON. On clicking on any user, a modal displays all the time ranges during which they were active on a particular day selected by the user through a calendar. GUI also provides a deeper insight just through hovering over the users, with a graph which plots the duration of sessions of seven most recent days.
@@ -49,6 +49,9 @@
 * [JavaSrcipt](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
 * [HTML/CSS](https://developer.mozilla.org/en-US/docs/Web/HTML)
 
+Also...
+* [AceEditor](https://github.com/securingsincity/react-ace)
+* [react-day-picker](https://react-day-picker.js.org/)
 
 
 <!-- GETTING STARTED -->
@@ -83,7 +86,7 @@ npm start
 <!-- USAGE  -->
 ## Usage
 
-<h4>Live Example (Production Build):</h4> [here](http://app.cloudsi.de.s3-website.ap-south-1.amazonaws.com/)
+<h4>🟢  Live Example (Production Build):</h4> http://app.cloudsi.de.s3-website.ap-south-1.amazonaws.com/
 
 
 <!-- TODO -->
